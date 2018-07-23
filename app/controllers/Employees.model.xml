@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dataModel baseSchema="dbo" baseTable="Employees" alias="Employees" created="2018-07-23T16:14:21" modified="2018-07-23T16:14:21" xmlns="urn:schemas-codeontime-com:data-model">
+  <foreignKeys>
+    <foreignKey id="Job" parentTableSchema="dbo" parentTableName="Jobs">
+      <foreignKeyColumn columnName="JobID" parentColumnName="JobID" />
+    </foreignKey>
+  </foreignKeys>
+  <columns>
+    <column name="EmployeeID" fieldName="EmployeeID" label="Employee ID" />
+    <column name="LastName" fieldName="LastName" label="Last Name" />
+    <column name="FirstName" fieldName="FirstName" label="First Name" />
+    <column name="JobID" fieldName="JobID" label="Job ID" aliasColumnName="Title" aliasForeignKey="Job" />
+    <column name="Title" fieldName="JobTitle" label="Job Title" foreignKey="Job" />
+    <column name="Salary" fieldName="Salary" label="Salary" format="c" />
+    <column name="Notes" fieldName="Notes" label="Notes" />
+    <column name="Photo" fieldName="Photo" label="Photo" />
+    <column name="HireDate" fieldName="HireDate" label="Hire Date" format="g" />
+  </columns>
+</dataModel>

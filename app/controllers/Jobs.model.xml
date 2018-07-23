@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dataModel baseSchema="dbo" baseTable="Jobs" alias="Jobs" created="2018-07-23T16:14:20" modified="2018-07-23T16:14:20" xmlns="urn:schemas-codeontime-com:data-model">
+  <foreignKeys />
+  <columns>
+    <column name="JobID" fieldName="JobID" label="Job ID" />
+    <column name="Title" fieldName="Title" label="Title" />
+    <column name="Description" fieldName="Description" label="Description" />
+  </columns>
+</dataModel>
